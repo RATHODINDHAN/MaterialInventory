@@ -1,0 +1,117 @@
+/* Home.css */
+
+/* Container for the entire home page */
+
+
+.home-container {
+    /* background-color: #e0f7fa; */
+    min-height: calc(100vh - 100px);
+    /* Adjust height to account for navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 18px;
+    /* Adjust top padding to account for navbar */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Button to download Excel data, positioned top-right */
+.top-right-button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+}
+
+
+/* Container for the product cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Individual product card styling */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+}
+
+/* Product image styling */
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    /* border-radius: 100%; */
+    margin: 10px 0;
+}
+
+/* Button to add or delete product */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Dialog styles */
+.dialog-title {
+    font-weight: bold;
+}
+
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 10px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .top-right-button {
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-image {
+        width: 80px;
+        height: 80px;
+    }
+}

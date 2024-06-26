@@ -1,0 +1,103 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+
+/* Dashboard Container */
+.dashboard-container {
+  background-color: #e0f7fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  /* Consistent font family */
+}
+
+/* Table Container */
+.dashboard-table-container {
+  width: 100%;
+  /* Adjust to 100% width to utilize max-width */
+  max-width: 70%;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  background-color: none;
+  /* Ensure spacing below the table container */
+}
+
+/* Buttons */
+.dashboard-button {
+  background-color: #00796b;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.dashboard-button:hover {
+  background-color: #004d40;
+}
+
+/* Input Fields */
+.dashboard-input {
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Table Heading */
+.dashboard-table-heading {
+  color: #0d47a1;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Arial Black', sans-serif;
+  margin: 20px 0;
+  /* Ensure spacing around the heading */
+}
+
+/* Price Indicators */
+.price-up {
+  color: green;
+  font-weight: bold;
+}
+
+.price-down {
+  color: red;
+  font-weight: bold;
+}
+
+/* Search Container */
+.dashboard-search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-table-search-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 70%;
+  margin-bottom: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .dashboard-table-container {
+    max-width: 90%;
+  }
+
+  .dashboard-input {
+    width: 100%;
+  }
+}
